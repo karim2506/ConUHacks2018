@@ -2,14 +2,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     tools:context="com.segang.gxcare.gxcare.Profile">
 
     <!-- TODO: Update blank fragment layout -->
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="10dp">
 
@@ -41,6 +41,15 @@
                     android:layout_weight="1"
                     android:text="Merek"
                     android:textSize="30dp" />
+                <EditText
+                    android:id="@+id/first_name_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_weight="1"
+                    android:textSize="30dp"
+                    android:visibility="gone" />
 
                 <TextView
                     android:id="@+id/last_name"
@@ -50,6 +59,14 @@
                     android:layout_weight="1"
                     android:text="Orlowski"
                     android:textSize="30dp" />
+                <EditText
+                    android:id="@+id/last_name_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:textSize="30dp"
+                    android:visibility="gone" />
 
             </LinearLayout>
 
@@ -62,12 +79,13 @@
 
             <TextView
                 android:id="@+id/date_of_birth_label"
-                android:layout_width="248dp"
+                android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_weight="1"
                 android:text="Date of Birth: "
-                android:textSize="20dp" />
+                android:textSize="20dp"
+                android:textStyle="bold"/>
 
             <TextView
                 android:id="@+id/date_of_birth"
@@ -77,16 +95,27 @@
                 android:layout_weight="1"
                 android:text="05/02/1996"
                 android:textSize="20dp" />
+            <EditText
+                android:id="@+id/date_of_birth_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:textSize="20dp"
+                android:visibility="gone" />
+
         </LinearLayout>
 
         <TextView
             android:id="@+id/emergency_contact_label"
             android:layout_width="248dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:layout_marginLeft="10dp"
             android:layout_weight="1"
             android:text="Emergency Contact:"
-            android:textSize="20dp" />
+            android:textSize="20dp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/emergency_contact_name"
@@ -96,6 +125,59 @@
             android:layout_weight="1"
             android:text="John Doe"
             android:textSize="20dp" />
+        <EditText
+            android:id="@+id/emergency_contact_name_edit"
+            android:layout_width="248dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:visibility="gone"/>
 
+        <TextView
+            android:id="@+id/emergency_contact_number"
+            android:layout_width="248dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="7054718331"
+            android:textSize="20dp" />
+        <EditText
+            android:id="@+id/emergency_contact_number_edit"
+            android:layout_width="248dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/medical_history_label"
+            android:layout_width="248dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="Medical History:"
+            android:textSize="20dp"
+            android:textStyle="bold" />
     </LinearLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/edit_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_edit_black_24dp"
+        app:layout_anchorGravity="bottom|right|end" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/save_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_save_black_24dp"
+        app:layout_anchorGravity="bottom|right|end"
+        android:visibility="gone"/>
 </FrameLayout>

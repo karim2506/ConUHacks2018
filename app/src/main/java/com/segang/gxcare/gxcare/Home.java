@@ -13,6 +13,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
+import twilio.TwilioMain;
+
+import static twilio.TwilioMain.sendmessage;
 
 
 /**
@@ -44,12 +47,14 @@ public class Home extends Fragment {
 
         emergencyContact.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                call("7054718331");
+                sendmessage();
+                //call("7054718331");
             }
         });
 
         emergency.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
+                //sendmessage();
                 call("7054718331");
             }
         });

@@ -6,7 +6,7 @@ import com.twilio.Twilio;
 import com.twilio.rest.api.v2010.account.Message;
 import com.twilio.type.PhoneNumber;
 
-public class TwilioMain{
+public class TwilioMain {
 
     // Find your Account Sid and Token at twilio.com/user/account
     public static final String ACCOUNT_SID = "ACcfe8e7daadca282955fcbf0f228e2e38";
