@@ -1,7 +1,7 @@
 # ConUHacks2018
 
 ## Inspiration
-We wanted to do something that would impact the world, **not just for 24 hours** but something that will actually be used!
+We wanted to do something that would impact the world :earth_americas:, **not just for 24 hours** but something that will actually be used!
 
 ## What it does
 GenXCare. Provide the elderly with daily assistance they need.
