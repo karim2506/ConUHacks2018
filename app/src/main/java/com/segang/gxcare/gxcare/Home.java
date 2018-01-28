@@ -55,7 +55,7 @@ public class Home extends Fragment {
         emergency.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 //sendmessage();
-                call("7054718331");
+                call("17054718331");
             }
         });
 
@@ -67,10 +67,6 @@ public class Home extends Fragment {
         Intent callIntent = new Intent(Intent.ACTION_CALL);
         callIntent.setData(Uri.parse("tel:" + number));
         System.out.println(number);
-        if (ActivityCompat.checkSelfPermission(getActivity(),
-                Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
-            return;
-        }
         startActivity(callIntent);
     }
 

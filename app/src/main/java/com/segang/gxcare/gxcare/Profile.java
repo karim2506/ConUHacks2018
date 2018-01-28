@@ -86,7 +86,37 @@ public class Profile extends Fragment {
     }
 
     public void save(View view) {
-    
+        EditText firstNameEdit = getView().findViewById(R.id.first_name_edit);
+        EditText lastNameEdit = getView().findViewById(R.id.last_name_edit);
+        EditText dateOfBirthEdit = getView().findViewById(R.id.date_of_birth_edit);
+        EditText emergencyContactNameEdit = getView().findViewById(R.id.emergency_contact_name_edit);
+        EditText emergencyContactPhoneNumberEdit = getView().findViewById(R.id.emergency_contact_number_edit);
+        FloatingActionButton saveBtn = getView().findViewById(R.id.save_btn);
+        firstNameEdit.setVisibility(View.GONE);
+        lastNameEdit.setVisibility(View.GONE);
+        dateOfBirthEdit.setVisibility(View.GONE);
+        emergencyContactNameEdit.setVisibility(View.GONE);
+        emergencyContactPhoneNumberEdit.setVisibility(View.GONE);
+        saveBtn.setVisibility(View.GONE);
+
+        TextView firstName = getView().findViewById(R.id.first_name);
+        TextView lastName = getView().findViewById(R.id.last_name);
+        TextView dateOfBirth = getView().findViewById(R.id.date_of_birth);
+        TextView emergencyContactName = getView().findViewById(R.id.emergency_contact_name);
+        TextView emergencyContactPhoneNumber = getView().findViewById(R.id.emergency_contact_number);
+        FloatingActionButton editBtn = getView().findViewById(R.id.edit_btn);
+        firstName.setVisibility(View.VISIBLE);
+        lastName.setVisibility(View.VISIBLE);
+        dateOfBirth.setVisibility(View.VISIBLE);
+        emergencyContactName.setVisibility(View.VISIBLE);
+        emergencyContactPhoneNumber.setVisibility(View.VISIBLE);
+        editBtn.setVisibility(View.VISIBLE);
+
+        firstName.setText(firstNameEdit.getText());
+        lastName.setText(lastNameEdit.getText());
+        dateOfBirth.setText(dateOfBirthEdit.getText());
+        emergencyContactName.setText(emergencyContactNameEdit.getText());
+        emergencyContactPhoneNumber.setText(emergencyContactPhoneNumberEdit.getText());
     }
 
 }
